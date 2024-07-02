@@ -54,7 +54,7 @@ public class Arquivo {
     public void escritaArquivo(String conteudo) throws IOException{
         // data e hora atual
         Date data = new java.util.Date();
-        SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
+        SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd-MM-yyyy-HH-mm-ss");
         String dataFormatada = sdf.format(data);
         nomeArquivo = nomeArquivo + "-" + dataFormatada + ".csv";
 
