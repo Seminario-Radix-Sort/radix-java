@@ -56,8 +56,9 @@ public class ControladorRadix {
                         long tempoInicial = System.nanoTime();
                         radix.radixSort();
                         long tempoFinal = System.nanoTime();
-                        tempo = (tempoFinal - tempoInicial) / 1000000000F;
-                        somaTempo += tempo;
+                        float tempoUnitario = (tempoFinal - tempoInicial) / 1000000000F;
+                        tempo += tempoUnitario;
+                        somaTempo += tempoUnitario;
                     }
 
                     tabelaSaida += String.format("%.6f", (tempo / 10)) + ",";
